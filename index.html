@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cal Tabuena-Frolli</title>
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+	</head>
+    <body>
+        <header>
+            <a href="index.html" class="home">
+                <img src="/Logo.png" alt="Alum Rock Press Logo">
+                <img src="/Header.png" alt="Alum Rock Press Header">
+            </a>
+            <div id="mainTitle">
+                <h1>CURRENT WORK</h1>
+                <button id="menuTog" onclick="togMenu()">></button>
+            </div>
+        </header>
+        <main>
+            <div id="index">
+                <!-- current page navigation -->
+                <section>
+                    <div>
+                        <h2 id="miniTitle">CURRENT WORK</h2>
+                    </div>
+                    <div class="item">
+                        <p class="date">2023</p>
+                        <a href="index.html#pic1">Devil Canyon</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2023</p>
+                        <a href="index.html#pic2">Diablo Range Serpentine</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2023</p>
+                        <a href="index.html#pic3">Public Inheritance 02</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2022</p>
+                        <a href="index.html#pic4">Contained Landscape 01</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2022</p>
+                        <a href="index.html#pic5">Hillside Bones</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="index.html#pic6">Spring 2020</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="index.html#pic7">Summer 2020</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="index.html#pic8">Fall 2020</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="index.html#pic9">Coalinga Fire</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="index.html#pic10">Self Portraits</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic11">History Is Derived from the Land</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic11">( Terrane )</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic12">( Export )</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic13">( Consumption )</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic14">( Culture )</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic15">Oil Studies</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2019</p>
+                        <a href="index.html#pic16">Yield 01, An Agricultural Portrait</a>
+                    </div>
+                </section>
+                <!-- site wide navigation -->
+                <section>
+                    <h2>COLLECTIONS</h2>
+                    <div class="space">
+                        <a href="index.html">
+                            <p>Current Work</p>
+                        </a>
+                        <a href="02_Commissions.html">
+                            <p>Commissions</p>
+                        </a>
+                        <a href="03_Photography.html">
+                            <p>Photography</p>
+                        </a>
+                        <a href="04_Prints_and_Series.html">
+                            <p>Prints and Series</p>
+                        </a>
+                        <a href="05_Books_and_Zines.html">
+                            <p>Books and Zines</p>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h2>ARTICLES</h2>
+                    <div class="space">
+                        <a href="about.html">
+                            <p>About Me</p>
+                        </a>
+                        <p id="contact" onclick="togEmail()">Contact</p>
+                        <p id="email" onclick="togEmail()">tabuenafrolli@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+            <div id="gal">
+            <!-- gallery -->
+                <div class="cap">
+                    <p>Pieces photographed at the studio of Angelou Masters</p>
+                    <p>and the house of Aadrita Mukerji</p>
+                </div>
+                <!-- add artwork template
+                <div class="piece" onmouseenter="highlight('PIECE NUMBER')" onmouseleave="unhighlight('PIECE NUMBER')">
+                    <img id="PIECE_ID" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/PIECE_SRC" alt="PIECE TITLE"/>
+                    <ul class="info">
+                        <h3>PIECE TITLE</h3>
+                        <li>INFO</li>
+                        <li>INFO</li>
+                        <li>INFO</li>
+                    </ul>
+                </div>
+                -->
+                <div class="piece" onmouseenter="highlight(1)" onmouseleave="unhighlight(1)">
+                    <img id="pic1" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W015.png" alt="Devil Canyon Portrait"/>
+                    <ul class="info">
+                        <h3>Devil Canyon Portrait</h3>
+                        <li>Grass from Devil Canyon and gesso </li>
+                        <li>16 x 20 in.</li>
+                        <li>2023</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(2)" onmouseleave="unhighlight(2)">
+                    <img id="pic2" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W014.png" alt="Diablo Range Serpentine Portrait"/>
+                    <ul class="info">
+                        <h3>Diablo Range Serpentine Portrait</h3>
+                        <li>Serpentine from near San Benito Mountain</li>
+                        <li>20 x 24 in.</li>
+                        <li>2023 </li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(3)" onmouseleave="unhighlight(3)">
+                    <img id="pic3" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W013.png" alt="Public Inheritance 02"/>
+                    <ul class="info">
+                        <h3>Public Inheritance 02 </h3>
+                        <li>Ink impressions of historically significant hazardous waste </li>
+                        <li> 36 x 53 in.</li>
+                        <li>2023</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(4)" onmouseleave="unhighlight(4)">
+                    <img id="pic4" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W012.png" alt="Contained Landscape 01"/>
+                    <ul class="info">
+                        <h3>Contained Landscape 01 </h3>
+                        <li> Glue, charcoal, reflective gravel, shell </li>
+                        <li> 7 x 5.5 x 2 in. </li>
+                        <li>2022</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(5)" onmouseleave="unhighlight(5)">
+                    <img id="pic5" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W011.png" alt="Hillside Bones"/>
+                    <ul class="info">
+                        <h3>Hillside Bones</h3>
+                        <li>Charred cow bones, ash from fire in the East Hills of San Jose </li>
+                        <li> 13.5 x 9 x 4.5 in. </li>
+                        <li>2022</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(6)" onmouseleave="unhighlight(6)">
+                    <img id="pic6" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W010-02.png" alt="Spring 2020"/>
+                    <ul class="info">
+                        <h3>Spring 2020</h3>
+                        <li>Asphaltum on paper </li>
+                        <li>18 x 24 in. </li>
+                        <li>2020</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W010-01.png" alt="Spring 2020 detail"/>
+                    <ul class="info">
+                        <h3>Spring 2020</h3>
+                        <li>detail</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(7)" onmouseleave="unhighlight(7)">
+                    <img id="pic7" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W009.png" alt="Summer 2020"/>
+                    <ul class="info">
+                        <h3>Summer 2020</h3>
+                        <li>Asphaltum on paper</li>
+                        <li>20 x 24 in.</li>
+                        <li>2020</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(8)" onmouseleave="unhighlight(8)">
+                    <img id="pic8" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W008.png" alt="Fall 2020"/>
+                    <ul class="info">
+                        <h3>Fall 2020</h3>
+                        <li>Asphaltum on paper </li>
+                        <li>18 x 24 in.</li>
+                        <li>2020</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(9)" onmouseleave="unhighlight(9)">
+                    <img id="pic9" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W007-04.png" alt="Coalinga Fire"/>
+                    <ul class="info">
+                        <h3>Coalinga Fire</h3>
+                        <li>a collection of 4 found objects from a fire site near Coalinga</li>
+                        <li>2020</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W007-03.png" alt=" Melted Trailer"/>
+                    <ul class="info">
+                        <h3> Melted Trailer</h3>
+                        <li>Metal and rocks </li>
+                        <li>12 x 15 x 1 in.</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W007-02.png" alt="Brick "/>
+                    <ul class="info">
+                        <h3>Brick</h3>
+                        <li>Metal on brick </li>
+                        <li>8 x 4 x 3 in.</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W007-01.png" alt="Twice-baked Tile + Wood Stand"/>
+                    <ul class="info">
+                        <h3>Twice-baked Tile</h3>
+                        <li> Metal on brick </li>
+                        <li>8 x 4 x 3 in.</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Wood Stand, detail</h3>
+                        <li>Wood cut by fire crew </li>
+                        <li>14 x 20 x 10 in. </li>
+                        <li>not pictured in full</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(10)" onmouseleave="unhighlight(10)">
+                    <img id="pic10" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W004-W006.png" alt="Self Portraits"/>
+                    <ul class="info">
+                        <h3>Self Portrait 01</h3>
+                        <li>Wood ash on paper </li>
+                        <li>17 x 26 in. </li>
+                        <li>2019</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Self Portrait 02</h3>
+                        <li>Object tracings on paper  </li>
+                        <li>17 x 26 in. </li>
+                        <li>2019</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Self Portrait 03</h3>
+                        <li>photograph </li>
+                        <li>2020</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(11)" onmouseleave="unhighlight(11)">
+                    <img id="pic11" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-05.png" alt="Terrane"/>
+                    <ul class="info">
+                        <h3>History Is Derived from the Land</h3>
+                        <li>set of 4 pieces </li>
+                        <li>Wood stain and charcoal on paper </li>
+                        <li>2019</li>
+                    </ul>
+                    <div class="cap">
+                        <p>The full name of this piece is in four parts. The names given in parentheses are the shorthand names for each piece.</p>
+                        <ul>
+                            <li>(&nbsp&nbspTerrane</li>
+                            <li>Export</li>
+                            <li>Consumption</li>
+                            <li>Culture&nbsp&nbsp)</li>        
+                        </ul>
+                    </div>
+                    <h3>If History is an account of power through time...</h3>
+                    <ul class="info">
+                        <h3> ( Terrane )  </h3>
+                        <li>17 x 26 in.</li>
+                        <li>detail below</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-06.png" alt="Terrane detail"/>
+
+                </div>
+                <div class="piece" onmouseenter="highlight(12)" onmouseleave="unhighlight(12)">
+                    <img id="pic12" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-04.png" alt="Export"/>
+                    <div class="cap">
+                        <h3>...And if power through time is determined</h3>
+                        <h3>by who has what resources and when...</h3>
+                    </div>
+                    <ul class="info">
+                        <h3>( Export )</h3>
+                        <li>17 x 26 in.</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(13)" onmouseleave="unhighlight(13)">
+                    <img id="pic13" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-02.png" alt="( Consumption )"/>
+                    <div class="cap">
+                        <h3>...And if resources are derived from rocks in the earth</h3>
+                        <h3>and from the forests that grow from those rocks</h3>
+                        <h3>and from the animals that grow from those forests...</h3>
+                    </div>
+                    <ul class="info">
+                        <h3>( Consumption )</h3>
+                        <li>17 x 26 in. </li>
+                        <li>detail below</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-03.png" alt="Consumption Detail"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(14)" onmouseleave="unhighlight(14)">
+                    <img id="pic14" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W003-01.png" alt="( Culture )"/>
+                    <div class="cap">
+                        <h3>...History is an account of humans' exploitation of nature </h3>
+                        <h3>for power and for the comfort of the powerful.</h3>
+                    </div>
+                    <ul class="info">
+                        <h3>( Culture )</h3>
+                        <li>17 x 26 in.</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(15)" onmouseleave="unhighlight(15)">
+                    <img id="pic15" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W002-04.png" alt="Oil Studies"/>
+                    <ul class="info">
+                        <h3>Oil Studies</h3>
+                        <li> Asphaltum, glue, and sawdust on wood </li>
+                        <li> 32 x 8 x 9 in. </li>
+                        <li> 2019 </li>
+                        <li>with details below</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W002-03.png" alt="Oil Studies Detail"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W002-02.png" alt="Oil Studies Detail"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W002-01.png" alt="Oil Studies Detail"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(16)" onmouseleave="unhighlight(16)">
+                    <img id="pic16" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/01_Current_Work/W001.png" alt="Yield 01 "/>
+                    <ul class="info">
+                        <h3>Yield 01</h3>
+                        <li> An Agricultural Portrait of California in Late 2010s</li>
+                        <li>Serigraph </li>
+                        <li>3.5 x 4.5 x 1.5 feet  </li>
+                        <li>2019</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Yield 01 Artist Proof </h3>
+                        <li>28 x 40 in. </li>
+                        <li>2019 </li>
+                    </ul>
+                    <div class="cap">
+                        <p><em>Yield 01 </em>premiered at the Santa Paula Art Museum's 2019 Art About Agriculture Show.</p>
+                        <p>It is a compilation documentary of each county's contribution</p>
+                        <p>to California's 50 billion dollar agriculture industry.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

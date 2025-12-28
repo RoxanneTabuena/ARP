@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cal Tabuena-Frolli</title>
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+	</head>
+    <body>
+        <header>
+            <a href="index.html" class="home">
+                <img src="/Logo.png" alt="Alum Rock Press Logo">
+                <img src="/Header.png" alt="Alum Rock Press Header">
+            </a>
+            <div id="mainTitle">
+                <h1>PAGE TITLE</h1>
+                <button id="menuTog" onclick="togMenu()">></button>
+            </div>
+        </header>
+        <main>
+            <div id="index">
+                <!-- current page navigation -->
+                <section>
+                    <div>
+                        <h2 id="miniTitle">PAGE TITLE</h2>
+                    </div>
+                    <div class="item">
+                        <p class="date">DATE</p>
+                        <a href="PIECE LINK">PIECE TITLE</a>
+                    </div>
+                </section>
+                <!-- site wide navigation -->
+                <section>
+                    <h2>COLLECTIONS</h2>
+                    <div class="space">
+                        <a href="index.html">
+                            <p>Current Work</p>
+                        </a>
+                        <a href="02_Commissions.html">
+                            <p>Commissions</p>
+                        </a>
+                        <a href="03_Photography.html">
+                            <p>Photography</p>
+                        </a>
+                        <a href="04_Prints_and_Series.html">
+                            <p>Prints and Series</p>
+                        </a>
+                        <a href="05_Books_and_Zines.html">
+                            <p>Books and Zines</p>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h2>ARTICLES</h2>
+                    <div class="space">
+                        <a href="about.html">
+                            <p>About Me</p>
+                        </a>
+                        <p id="contact" onclick="togEmail()">Contact</p>
+                        <p id="email" onclick="togEmail()">tabuenafrolli@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+            <!-- gallery -->
+            <div id="gal">
+                <!-- optional caption -->
+                <div class="cap">
+                    <p>collection info</p>
+                </div>
+                <div class="piece" onmouseenter="highlight('PIECE NUMBER')" onmouseleave="unhighlight('PIECE NUMBER')">
+                    <img id="PIECE_ID" src="PIECE_SRC" alt="PIECE TITLE"/>
+                    <ul class="info">
+                        <h3>PIECE TITLE</h3>
+                        <li>INFO</li>
+                        <li>INFO</li>
+                        <li>INFO</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>&copy; 2023 Cal Thomas Tabuena-Frolli</footer>
+    </body>
+</html>

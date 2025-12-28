@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cal Tabuena-Frolli</title>
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+	</head>
+    <body>
+        <header>
+            <a href="index.html" class="home">
+                <img src="/Logo.png" alt="Alum Rock Press Logo">
+                <img src="/Header.png" alt="Alum Rock Press Header">
+            </a>
+            <div id="mainTitle">
+                <h1>PHOTOGRAPHY</h1>
+                <button id="menuTog" onclick="togMenu()">></button>
+            </div>
+        </header>
+        <main>
+            <div id="index">
+                <!-- current page navigation -->
+                <section>
+                    <div>
+                        <h2 id="miniTitle">PHOTOGRAPHY</h2>
+                    </div>
+                    <div class="item">
+                        <p class="date">2023</p>
+                        <a href="03_Photography.html#pic1">Self Portrait</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2022</p>
+                        <a href="03_Photography.html#pic2">Oil Research Series</a>
+                    </div>
+                    <div class="item">
+                        <p class="date">2020</p>
+                        <a href="03_Photography.html#pic3">Fire Drive Series</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2018</p>
+                        <a href="03_Photography.html#pic4">Self Portraits</a>
+                    </div>
+                    <div class="item">
+                        <a class="space" href="03_Photography.html#pic5">Los Angeles</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2017</p>
+                        <a href="03_Photography.html#pic6">California</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2014</p>
+                        <a href="03_Photography.html#pic7">California</a>
+                    </div>
+                    <div class="item">
+                        <a class="space" href="03_Photography.html#pic8">Alum Rock</a>
+                    </div>
+                    <div class="item">
+                        <a class="space" href="03_Photography.html#pic9">Los Angeles</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2013</p>
+                        <a href="03_Photography.html#pic10">Los Angeles</a>
+                    </div>
+                    <div class="item">
+                        <a class="space" href="03_Photography.html#pic11">California</a>
+                    </div>
+                    <div class="item">
+                        <a class="space" href="03_Photography.html#pic12">USC Photography</a>
+                    </div>
+                    <div class="break"></div>
+                    <div class="item">
+                        <p class="date">2008</p>
+                        <a href="03_Photography.html#pic13">Philippines</a>
+                    </div>
+                </section>
+                <!-- site wide navigation -->
+                <section>
+                    <h2>COLLECTIONS</h2>
+                    <div class="space"> 
+                        <a href="index.html">
+                            <p>Current Work</p>
+                        </a>
+                        <a href="02_Commissions.html">
+                            <p>Commissions</p>
+                        </a>
+                        <a href="03_Photography.html">
+                            <p>Photography</p>
+                        </a>
+                        <a href="04_Prints_and_Series.html">
+                            <p>Prints and Series</p>
+                        </a>
+                        <a href="05_Books_and_Zines.html">
+                            <p>Books and Zines</p>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h2>ARTICLES</h2>
+                    <div class="space">
+                        <a href="about.html">
+                            <p>About Me</p>
+                        </a>
+                        <p id="contact" onclick="togEmail()">Contact</p>
+                        <p id="email" onclick="togEmail()">tabuenafrolli@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+            <!-- gallery -->
+            <div id="gal">
+                <!-- optional caption -->
+                <div class="cap">
+                    <p>collection info</p>
+                </div>
+                <div class="piece" onmouseenter="highlight(1)" onmouseleave="unhighlight(1)">
+                    <img id="pic1" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P008.png" alt="Self Portrait"/>
+                    <ul class="info">
+                        <h3>Self Portrait</h3>
+                        <li>digital</li>
+                        <li>2023</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(2)" onmouseleave="unhighlight(2)">
+                    <img id="pic2" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-07.png" alt="Jalama 01"/>
+                    <ul class="info">
+                        <h3>Oil Research Series</h3>
+                        <li>Photographs taken during field research on California's oil history </li>
+                        <li>digital </li>
+                        <li>2019 - 2022</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Jalama 01 </h3>
+                        <li>Jalama State Beach</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-06.png" alt="Jalama 02 & Carpinteria 01"/>
+                    <ul class="info">
+                        <h3>Jalama 02</h3>
+                        <li>Jalama State Beach</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Carpinteria 01</h3>
+                        <li>Carpinteria State Beach</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-05.png" alt="Jalama 03 "/>
+                    <ul class="info">
+                        <h3>Jalama 03</h3>
+                        <li>Jalama State Beach</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-04.png" alt="Huntington Beach 01"/>
+                    <ul class="info">
+                        <h3>Huntington Beach 01</h3>
+                        <li>Harriet M. Wieder Regional Park</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-03.png" alt="Pico Canyon 01"/>
+                    <ul class="info">
+                        <h3>Pico Canyon 01</h3>
+                        <li>Mentryville, Newhall</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-02.png" alt="Jalama 04 & Santa Paula 01"/>
+                    <ul class="info">
+                        <h3>Jalama 04</h3>
+                        <li>Jalama State Beach</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Santa Paula 01</h3>
+                        <li>Sisar Creek</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P007-01.png" alt="Los Angeles 01"/>
+                    <ul class="info">
+                        <h3>Los Angeles 01</h3>
+                        <li>Kenneth Hahn State Park</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(3)" onmouseleave="unhighlight(3)">
+                    <img id="pic3" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P006-05.png" alt="Elizabeth Lake 01 "/>
+                    <ul class="info">
+                        <h3>Fire Drive Series </h3>
+                        <li>Photographs taken during a drive to various fire sites in California </li>
+                        <li>digital</li>
+                        <li>2020</li>
+                    </ul>
+                    <ul class="info">
+                        <h3>Elizabeth Lake 01 </h3>
+                        <li>Near Highway N2</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P006-04.png" alt=" Mojave 01 "/>
+                    <ul class="info">
+                        <h3> Mojave 01</h3>
+                        <li> Near Highway 40</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P006-03.png" alt=" Mojave 02 "/>
+                    <ul class="info">
+                        <h3> Mojave 02</h3>
+                        <li> Near Highway 40</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P006-02.png" alt="Coalinga 01 and 02 "/>
+                    <ul class="info">
+                        <h3>Coalinga 01 and 02 </h3>
+                        <li>Near Highway 198</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P006-01.png" alt="Coalinga 03"/>
+                    <ul class="info">
+                        <h3>Coalinga 03 </h3>
+                        <li>Near Highway 198</li>
+                    </ul>
+                </div>
+                <div class="piece" onmouseenter="highlight(4)" onmouseleave="unhighlight(4)">
+                    <img id="pic4" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P005-0202.png" alt="Self Portraits"/>
+                    <ul class="info">
+                        <h3>Self Portraits </h3>
+                        <li>taken at the studio of James R. Eads and at LACA </li>
+                        <li>2018 </li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P005-0201.png" alt="Self Portraits"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(5)" onmouseleave="unhighlight(5)">
+                    <img id="pic5" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P005-0104.png" alt="Los Angeles"/>
+                    <ul class="info">
+                        <h3>Los Angeles</h3>
+                        <li>digital</li>
+                        <li>2018</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P005-0103.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P005-0102.png" alt="Los Angeles"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(6)" onmouseleave="unhighlight(6)">
+                    <img id="pic6" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P004-03.png" alt="California"/>
+                    <ul class="info">
+                        <h3>California</h3>
+                        <li>film</li>
+                        <li>2017</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P004-02.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P004-01.png" alt="California"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(7)" onmouseleave="unhighlight(7)">
+                    <img id="pic7" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0307.png" alt="California"/>
+                    <ul class="info">
+                        <h3>California</h3>
+                        <li>film </li>
+                        <li>2014 </li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0306.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0305.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0304.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0303.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0302.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0301.png" alt="California"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(8)" onmouseleave="unhighlight(8)">
+                    <img id="pic8" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0208.png" alt="Alum Rock"/>
+                    <ul class="info">
+                        <h3>Alum Rock</h3>
+                        <li>film</li>
+                        <li>2014</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0207.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0206.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0205.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0204.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0203.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0202.png" alt="Alum Rock"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0201.png" alt="Alum Rock"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(9)" onmouseleave="unhighlight(9)">
+                    <img id="pic9" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0112.png" alt="Los Angeles"/>
+                    <ul class="info">
+                        <h3>Los Angeles</h3>
+                        <li>film</li>
+                        <li>2014</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0111.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0110.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0109.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0108.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0107.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0106.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0105.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0104.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0103.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0102.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P003-0101.png" alt="Los Angeles"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(10)" onmouseleave="unhighlight(10)">
+                    <img id="pic10" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0314.png" alt="Los Angeles"/>
+                    <ul class="info">
+                        <h3>Los Angeles</h3>
+                        <li>film </li>
+                        <li>2013</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0313.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0312.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0311.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0310.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0309.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0308.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0307.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0306.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0305.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0304.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0303.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0302.png" alt="Los Angeles"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0301.png" alt="Los Angeles"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(11)" onmouseleave="unhighlight(11)">
+                    <img id="pic11" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0204.png" alt="California"/>
+                    <ul class="info">
+                        <h3>California</h3>
+                        <li>film</li>
+                        <li>2013</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0203.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0202.png" alt="California"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0201.png" alt="California"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(12)" onmouseleave="unhighlight(12)">
+                    <img id="pic12" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0105.png" alt="USC Photography"/>
+                    <ul class="info">
+                        <h3>USC Photography</h3>
+                        <li>digital </li>
+                        <li>thanks to professors Jennifer West, Caroline Clerc and Peter Holzhauer </li>
+                        <li>2013</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0104.png" alt="USC Photography"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0103.png" alt="USC Photography"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0102.png" alt="USC Photography"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P002-0101.png" alt="USC Photography"/>
+                </div>
+                <div class="piece" onmouseenter="highlight(13)" onmouseleave="unhighlight(13)">
+                    <img id="pic13" src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P001-04.png" alt="Philippines"/>
+                    <ul class="info">
+                        <h3>Philippines</h3>
+                        <li>digital </li>
+                        <li>2008</li>
+                    </ul>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P001-03.png" alt="Philippines"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P001-02.png" alt="Philippines"/>
+                    <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/03_Photography/P001-01.png" alt="Philippines"/>
+                </div>
+            </div>
+            &copy; 2023 Cal Thomas Tabuena-Frolli 
+        </main>
+        <footer></footer>
+    </body>
+</html>

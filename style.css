@@ -1,0 +1,380 @@
+/* resets*/
+	* {
+		cursor: default;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		font-weight: 100;
+		max-width: 100%;
+		/* background-color: white; */
+		position: relative;
+	}
+
+	body {
+		margin: 0 1em auto;
+		max-width: 100vw;
+		position: relative;
+	}
+
+	p {
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	a:link {
+
+		text-decoration: none;
+		color: black;
+	}
+
+	a:visited {
+
+		text-decoration: none;
+		color: black;
+	}
+
+	a:active {
+
+		text-decoration: none;
+		color: black;
+	}
+
+	button{
+		all: unset;
+	}
+
+	ul {
+		all: unset;
+		list-style: none;
+	}
+
+/* text styling */
+	html {
+		font-family: 'AvenirNextLTPro-Regular';
+		background-color: white;
+	}
+
+	@font-face {
+		font-family:"AvenirNextLTPro-Regular";
+		src: url("AvenirNextLTPro-Regular.otf");
+	}
+
+	*{
+		font-size: 16px;
+	}
+
+
+	a:hover {
+
+		text-decoration: none;
+		color: #8c3728;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	a, a> * {
+		cursor: pointer;
+	}
+
+/* header */
+	header {
+		display: flex;
+		align-items: baseline;
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		justify-content: space-between;
+		margin: 0;
+		left: 0;
+		background-color: white;
+	}
+
+	#mainTitle {
+		display: flex;
+		align-items: center;
+	}
+
+	.home {
+		margin: 1em 1em 0 1em;
+		display:flex;
+		align-items: flex-end;
+		flex-grow: 0;
+	}
+
+/* index */
+	h2, section{
+		margin-bottom: 1em;
+	}
+
+	.space > a > p, .space > p, a.space {
+	margin-left: 4.5em;
+}
+
+.halfSpace > a >p, .halfSpace > p, a.halfSpace {
+		margin-left: 1em;
+
+	}
+
+	.item {
+		display: flex;
+	}
+
+	.item:hover{
+		color: #8c3728;
+	}
+
+	.date {
+		text-align: right;
+		width: 3.5em;
+		padding-right: 1em;
+	}
+	.date-l {
+		text-align: right;
+		width: 7.5em;
+		padding-right: 1em;
+	}
+
+	.item a {
+		text-wrap: wrap;
+		max-width: 21.5em;
+	}
+
+	/* contact animation */
+	#contact:hover, #email:hover{
+		color: #8c3728;
+		cursor: pointer;
+	}
+
+	.break {
+		height: 2em;
+	}
+
+/* gallery */
+	#gal{
+		position: relative;
+		z-index: 10;
+	}
+
+	.cap {
+		padding: 1em;
+	}
+
+	.piece  img {
+		display: block;
+		margin: auto;
+	}
+
+	.piece, .cap{
+		text-align: center;
+	}
+
+	.piece > .cap {
+		margin: 1em;
+	}
+
+	.cap > ul {
+		display: flex;
+	}
+
+	.cap > ul *:not(:first-child)::before{
+		content: '|';
+		margin: 1em;
+		font-style: normal;
+	}
+	
+	.info {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 1em;
+	}
+
+	.piece h3{
+		font-style: italic;
+	}
+	
+	.piece section {
+		margin-bottom:3em;
+	}
+
+	section.left {
+		text-align: left;
+		margin: auto;
+		width:fit-content
+	}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+/* sizing */
+	.home > *{
+		width: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	h1, #menuTog {
+		font-size: 1.44em;
+	}
+
+	#gal {
+		margin-top: 4em;
+	}
+
+/* layout */
+
+	#index {
+		padding: .5em;
+		position: fixed;
+		background-color: white;
+		box-shadow: 2px 2px 4px #484848;
+		z-index: 20;
+	}
+
+	#miniTitle{
+		display: none;
+	}
+
+	#menuTog {
+		margin: 0 .5em;
+	}
+
+	header {
+		/* trick to hide animation */
+		box-shadow: 0em -1em 0em 0em white  ;
+	}
+
+	.piece {
+		padding-top: 4em;
+		margin-bottom: 4em;
+	}
+
+	.info {
+		justify-content: flex-start;
+	}
+
+	.info > * {
+		text-align: left;
+	}
+
+	.cap > ul {
+		justify-content: flex-start;
+	}
+
+	/* add a separator to small items  */
+	.small + .small::before {
+		content: '|';
+		margin: 1em;
+	}
+
+	/* force first .small item onto a new line */
+	*:not(.small):has( + .small) {
+		flex-basis: 100%;
+	}
+
+/* toggle mechanics */
+	/* hide the menu above while not in use */
+	#index {
+		right: 0;
+		top: -700px;
+	}
+	/* slow transitions */
+	button, #index, #gal {
+		transition: .5s
+	}
+	/* turn arrow down and raise on toggle */
+	.rotDown {
+		transform: rotate(90deg) translate(-2px, 0);
+	}
+	/* bring menu down for viewing */
+	.slide {
+		transform: translateY(766px);
+	}
+	/* dim gallery when menu is open */
+	.dim {
+		opacity: .6;
+	}
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+
+/* sizing */
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+		
+	.home > *{
+		
+		width: 5em;
+	}
+
+	.home, #index {
+		width: 30em;
+	}
+
+	#gal{
+		margin-top: 7.5em;
+		margin-left: 30em;
+	}
+
+	.piece{
+		margin-bottom: 8em;
+	}
+
+	.piece img{
+		max-height: 75em;
+	}
+	
+/* layout */
+
+	#index{
+		position: fixed;
+		top: 7.5em;
+		left: 0;
+		z-index: 100;
+	}
+
+	#mainTitle{
+		justify-content: center;
+		flex: 1;
+	}
+
+	h2 {
+		margin-left: 1em;
+	}
+
+	#menuTog{
+		display: none;
+	}
+
+	.info {
+		justify-content: center;
+	}
+
+	.cap > ul {
+		justify-content: center;
+	}
+	/* add separators to info items */
+	.info *:not(:first-child)::before{
+		content: '|';
+		margin: 1em;
+		font-style: normal;
+	}
+	/* highlight current place in index */
+	.highlight p, .highlight>a{
+		color: #8c3728;
+	}
+}
